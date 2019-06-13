@@ -1,9 +1,5 @@
 pipeline {
-   agent {
-        docker {
-            image 'gcr.io/cloub-builders/docker'
-	}
-   }
+   agent any
    stages {
        stage( 'Build' ) {
            steps {
